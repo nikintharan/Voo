@@ -4,7 +4,7 @@ var ViewModel,
 
 ViewModel = new Observable({
 
-    pageTitle: 'Data List',
+    pageTitle: 'Volunteer Opportunities',
 
     listItems: [],
     // additional properties

@@ -6,7 +6,7 @@
 
             <GridLayout rows="*">
 
-                <ListView items="{{ listItems }}">
+                <ListView items="{{ listItems }}" itemTap="onListViewItemTap">
 
                     <ListView.itemTemplate>
                         <GridLayout columns="*" cssClass="padded-label">

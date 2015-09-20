@@ -10,13 +10,15 @@
           "dataProvider": "defaultProvider",
           "collection": "Activities",
           "headerField": "Text",
-          "masterDetails": false,
+          "iconField": false,
+          "masterDetails": true,
+          "detailHeaderField": "Text",
           "pullToRefresh": false,
           "endlessScroll": false
         }
       ],
       "name": "page1",
-      "title": "Data List",
+      "title": "Volunteer Opportunities",
       "addToNavigation": true,
       "icon": "organize"
     },

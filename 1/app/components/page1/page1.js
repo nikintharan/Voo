@@ -7,6 +7,16 @@ var isInit = true,
 
     viewModel = require('./page1-view-model');
 
+function onListViewItemTap(args) {
+    var itemData = viewModel.get("listItems")[args.index];
+
+    helpers.navigate({
+        moduleName: "components/page1/itemDetails/itemDetails",
+        context: itemData.details
+    });
+}
+exports.onListViewItemTap = onListViewItemTap;
+
 function flattenLocationProperties(dataItem) {
     var propName, propValue,
         isLocation = function(value) {
@@ -45,6 +55,12 @@ function pageLoaded(args) {
                 itemsList.push({
 
                     header: item.Text,
+
+                    details: {
+
+                        header: item.Text,
+
+                    }
 
                 });
             });
