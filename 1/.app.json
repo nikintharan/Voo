@@ -3,16 +3,53 @@
   "views": [
     {
       "type": "view",
-      "components": [],
-      "name": "home",
-      "title": "Home",
+      "components": [
+        {
+          "type": "list",
+          "name": "page1Model",
+          "dataProvider": "defaultProvider",
+          "collection": "Activities",
+          "headerField": "Text",
+          "masterDetails": false,
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "page1",
+      "title": "Data List",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "page1",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "page1",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "name": "authenticationView",
+      "title": "VolunteerOps",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [
     {
       "type": "dataProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
       "title": "DefaultProvider",
       "source": "everlive",

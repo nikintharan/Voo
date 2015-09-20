@@ -4,10 +4,13 @@ var ViewModel,
 
 ViewModel = new Observable({
 
-    pageTitle: 'Home',
+    pageTitle: 'Data List',
+
+    listItems: [],
     // additional properties
+
 });
 
-// START_CUSTOM_CODE_home
-// END_CUSTOM_CODE_home
+// START_CUSTOM_CODE_page1
+// END_CUSTOM_CODE_page1
 module.exports = ViewModel;

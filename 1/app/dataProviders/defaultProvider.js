@@ -3,6 +3,8 @@ var provider,
 
 provider = new TelerikBackendServices({
 
+    url: '//platform.telerik.com/bs-api/v1/',
+
     apiKey: 'hmcDcMpx3UPHWL0V',
     scheme: 'https'
 });
