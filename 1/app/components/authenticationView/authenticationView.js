@@ -43,7 +43,7 @@ function onSignin(data) {
 }
 
 function registerSuccess() {
-    helpers.navigate('components/page1/page1');
+    helpers.navigate('components/formView/formView');
 }
 
 function onRegister(data) {

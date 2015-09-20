@@ -39,12 +39,34 @@
           "registerPasswordLabel": "Password",
           "registerNameLabel": "Name",
           "registerLabel": "Register",
-          "registerRedirect": "page1",
+          "registerRedirect": "formView",
           "gotoSigninLabel": "Sign In"
         }
       ],
       "name": "authenticationView",
       "title": "VolunteerOps",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "bio1",
+              "title": "Preferences",
+              "inputType": "text",
+              "placeholder": "johndoe"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Search"
+        }
+      ],
+      "name": "formView",
+      "title": "Details",
       "addToNavigation": false
     }
   ],
