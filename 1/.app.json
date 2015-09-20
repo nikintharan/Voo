@@ -1,15 +1,27 @@
 {
   "type": "NativeScript",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    }
+  ],
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": false,
       "everliveKey": "hmcDcMpx3UPHWL0V",
-      "everliveUrl": ""
+      "offlineStorage": false
     }
-  ]
+  ],
+  "name": "nativeScriptApp",
+  "navigation": "listmenu",
+  "transition": "none",
+  "skin": "native"
 }
